@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 public class CardDeck {
 
@@ -13,6 +14,10 @@ public class CardDeck {
                 cards.add(new Cards(suit, String.valueOf(value)));
             }
         }
+    }
+
+    public void sortDeck() {
+        Collections.sort(cards);
     }
 
 }
